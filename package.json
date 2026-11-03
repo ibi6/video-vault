@@ -1,0 +1,22 @@
+{
+  "name": "video-vault",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "本机抖音与哔哩哔哩收藏库",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check lib/store.js && node --check lib/normalize.js && node --check lib/browser.js && node --check lib/bilibili.js && node --check lib/douyin.js && node --check lib/sync.js && node --check public/app.js && node --check scripts/release.mjs",
+    "test": "node --test tests/*.test.js",
+    "test:ui": "node tests/ui.mjs",
+    "release:check": "node scripts/release.mjs check",
+    "release:stage": "node scripts/release.mjs stage",
+    "release:pack": "node scripts/release.mjs pack"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "playwright": "^1.64.1"
+  }
+}

@@ -1,0 +1,55 @@
+# Dependencies and generated release packages
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# Private runtime data and development captures (never publish)
+data/
+browser-profiles/
+research/
+artifacts/
+exports/
+logs/
+backups/
+*.log
+*.har
+*.jsonl
+*.sqlite*
+*.db
+*.db-*
+*.zip
+*.tar
+*.tgz
+video-vault-export*.json
+拾影收藏-*.json
+
+# Environment, keys and browser authentication state
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+cookies*.json
+storage-state*.json
+storageState*.json
+auth*.json
+Cookies
+Cookies-journal
+Login Data
+Login Data-journal
+Local State
+
+# Machine-specific editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
